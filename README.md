@@ -1,5 +1,6 @@
 # Software_Development_using_AI
 CDL and InfoAge will be offering a 5 session class. The dates of the class are:
+
 Wednesday Sept 23, 2026 from 7 to 10 PM
 Wednesday Sept 30, 2026 from 7 to 10 PM
 Wednesday Oct 7, 2026 from 7 to 10 PM
