@@ -34,22 +34,27 @@ instructors will help you
 
 # Schedule:
 
-Wednesday Sept 23, 2026 from 7 to 10 PM
-Wednesday Sept 30, 2026 from 7 to 10 PM
-Wednesday Oct 7, 2026 from 7 to 10 PM
-Wednesday Oct 14, 2026 from 7 to 10 PM
-Wednesday Oct 21, 2026 from 7 to 10 PM
+| Day | Date | Time |
+| -- | -- | -- |
+| Wednesday | Sept 23, 2026 | from 7 to 10 PM |
+| Wednesday | Sept 30, 2026 | from 7 to 10 PM |
+| Wednesday | Oct 7, 2026 | from 7 to 10 PM |
+| Wednesday | Oct 14, 2026 | from 7 to 10 PM |
+| Wednesday | Oct 21, 2026 | from 7 to 10 PM |
 
 # Where
 
 The class will be held in the Learning Center in Building 9059 at the 
-InfoAge Science and History Museum
-2201 Marconi Road
-Wall, NJ 07719
+InfoAge Science and History Museum  
+
+InfoAge Science and History Museum  
+Building 9059  
+2201 Marconi Road  
+Wall, NJ 07719  
 
 The Tuition will be $300 in check or cash collected at the first class
 
-The instructors are:
+The instructors are:  
 
-Neil Cherry, BS-CS
+Neil Cherry, BS-CS  
 Joseph E. Wilkes, PhD-EE
