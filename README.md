@@ -9,18 +9,18 @@ See AI_prerequistes.pdf for details
 - It is recommended that you have the latest Windows, Linux or Mac OS on a working laptop.
   - Window Home or Professional
 - Create paid account for [https://claude.ai/](Claude)
-- Create a [https://github.com/signup](GitHub account)
+- Create a [https://github.com/signup](GitHub) account
 - Using a Windows 11 Laptop with the following requirements
   - Intel CPUs: "Intel Virtualization Technology," "VT-x," or "VT-d" must be ON in your BIOS
   - **OR** AMD CPUs: "AMD-V" or "SVM" (Secure Virtual Machine) must be ON in your BIOS
   - Latest Powershell 7
   - wsl --install
     - wsl --install ubuntu
-    - The first time you run wsl you will need to [https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password](create a login and password)
+    - The first time you run wsl you will need to [https://learn.microsoft.com/en-us/windows/wsl/setup/environment#set-up-your-linux-username-and-password](create) a login and password
     - Download and install [https://github.com/dorssel/usbipd-win/releases](usbipd-win)
-      -  Follow directions from the [https://github.com/dorssel/usbipd-win/blob/master/README.md](usbipd-win README.md)
-- Download [https://www.docker.com/products/docker-desktop/](Docker Desktop) for your OS
-- Download [https://code.visualstudio.com/download](Visual Studio Code)
+      -  Follow directions from the usbipd-win [https://github.com/dorssel/usbipd-win/blob/master/README.md](README.md)
+- Download Docker [https://www.docker.com/products/docker-desktop/](Desktop) for your OS
+- Download Visual Studio [https://code.visualstudio.com/download](Code)
   - Start Visual Studio Code
   - Select Extensions
   - Search for container tools
