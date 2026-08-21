@@ -35,8 +35,14 @@ LINUX:
 
 See the claude_code_docker_ubuntu_prerequistes.pdf
 
+- Create paid account for [Claude](https://claude.ai/)
+- Create a [GitHub account](https://github.com/signup)
+
+Following the Sections 1-5 in the prerequistes file to install docker and build a docker for claude.
+To add additional capabilities for example: git, gcc, see Section 6.
+
 This should work for any Debian based version of Linux.
-If you get error messages in starting claude make sure that there is only one claude docke; delete the others and restart the docker.
+If you get error messages in starting claude make sure that there is only one claude docker; delete the others and restart the docker.
 If you are using a non-Debian based version, post on the cdl groups.io site and the instructors will try to help.
 
 
