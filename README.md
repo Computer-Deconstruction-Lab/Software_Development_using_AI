@@ -1,8 +1,10 @@
 # Software_Development_using_AI
 
-CDL and InfoAge will be offering a 5 session class. The dates of the class are:
+CDL and InfoAge will be offering a 5 session class.
 
 # Prerequistes
+
+WINDOWS:
 
 See AI_prerequistes.pdf for details
 
@@ -29,8 +31,19 @@ See AI_prerequistes.pdf for details
 
 If you have questions check the links on each slide
 
+LINUX:
+
+See the claude_code_docker_ubuntu_prerequistes.pdf
+
+This should work for any Debian based version of Linux.
+If you get error messages in starting claude make sure that there is only one claude docke; delete the others and restart the docker.
+If you are using a non-Debian based version, post on the cdl groups.io site and the instructors will try to help.
+
+
 If you still have any issues, come to the first class early and the
 instructors will help you
+
+The dates of the class are:
 
 # Schedule:
 
