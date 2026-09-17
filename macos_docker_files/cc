@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+# cc — launch Claude Code inside the container from anywhere on the Mac.
+#
+# Install:
+#   chmod +x cc
+#   sudo ln -sf "$(pwd)/cc" /usr/local/bin/cc     # Intel Macs
+#   sudo ln -sf "$(pwd)/cc" /opt/homebrew/bin/cc  # Apple Silicon, if you
+#                                                 # prefer the brew prefix
+# Usage:
+#   cc                 # shell in the container, at the current project
+#   cc claude          # go straight into Claude Code
+#   cc claude --help   # anything else is passed through
+
+set -euo pipefail
+
+# Directory this script lives in (where Dockerfile + docker-compose.yml are).
+STACK_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+
+# Mount the directory you invoked cc from, so the container always sees the
+# project you are actually working on.
+PROJECT_DIR="${PWD}"
+
+if ! docker info >/dev/null 2>&1; then
+  echo "cc: Docker is not running. Start Docker Desktop (or OrbStack/Colima) first." >&2
+  exit 1
+fi
+
+exec docker compose \
+  --project-directory "${STACK_DIR}" \
+  -f "${STACK_DIR}/docker-compose.yml" \
+  run --rm \
+  --volume "${PROJECT_DIR}:/home/node/workspace:cached" \
+  claude "${@:-/bin/zsh}"

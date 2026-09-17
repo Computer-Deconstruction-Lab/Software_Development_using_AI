@@ -1,0 +1,59 @@
+services:
+  claude:
+    build:
+      context: .
+      args:
+        NODE_VERSION: "22"
+        # Pin to a specific release for reproducible rebuilds, e.g. "2.0.14".
+        CLAUDE_CODE_VERSION: "latest"
+    image: claude-code-dev:local
+    container_name: claude-code-dev
+    hostname: claude-box
+    init: true
+    stdin_open: true
+    tty: true
+    working_dir: /home/node/workspace
+
+    environment:
+      CLAUDE_CONFIG_DIR: /home/node/.claude
+      # Uncomment to stop the CLI updating itself inside the image.
+      # DISABLE_AUTOUPDATER: "1"
+      # Optional headless auth — see the guide. Generate on the Mac with
+      # `claude setup-token`, then export it before `docker compose run`.
+      # CLAUDE_CODE_OAUTH_TOKEN: ${CLAUDE_CODE_OAUTH_TOKEN:-}
+
+    volumes:
+      # Your code. Change the left side to the project you want Claude to see.
+      # Keep this as narrow as you can: everything under it is reachable.
+      - ./workspace:/home/node/workspace:cached
+
+      # Auth + settings + history. This is what survives `docker compose build
+      # --no-cache` and image deletion. Back it up (see guide, section 8).
+      - claude-config:/home/node/.claude
+
+      # Keeps npm downloads off the bind mount and out of the image layer.
+      - claude-npm-cache:/home/node/.npm
+
+      # Optional: keep node_modules in a volume rather than on the macOS bind
+      # mount. Big speed win for JS projects; harmless to leave out for C/C++
+      # or Python work.
+      # - claude-node-modules:/home/node/workspace/node_modules
+
+    # Optional. The browser sign-in callback lands on a localhost port inside
+    # the container, which the Mac's browser cannot reach. The reliable answer
+    # is the paste-the-code fallback (see guide, section 6) or a pre-generated
+    # OAuth token. If you would rather forward the callback, run `claude`,
+    # read the port out of the URL it prints, and publish that port here:
+    # ports:
+    #   - "127.0.0.1:PORT:PORT"
+
+    # Sensible guardrails for an agent running with loosened permissions.
+    # Raise if your builds are heavy; Docker Desktop's own VM limit still caps
+    # these (Settings -> Resources).
+    mem_limit: 8g
+    cpus: 4
+
+volumes:
+  claude-config:
+  claude-npm-cache:
+  claude-node-modules:
