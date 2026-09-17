@@ -45,6 +45,14 @@ This should work for any Debian based version of Linux.
 If you get error messages in starting claude make sure that there is only one claude docker; delete the others and restart the docker.
 If you are using a non-Debian based version, post on the cdl groups.io site and the instructors will try to help.
 
+MAC OS:
+
+At set of files and directions to build a claude code container on Mac Silicon MAC OS are in this repository
+They were built by Claude
+Note: The instructors do not have a spare M series mac to test these directions
+If you run into issues, it is suggested that you past the error messages into Claude and ask it for help.
+Also post on https://groups.io/g/cdl/topics to let the instructors know of the issues
+
 
 If you still have any issues, come to the first class early and the
 instructors will help you
