@@ -47,10 +47,10 @@ If you are using a non-Debian based version, post on the cdl groups.io site and 
 
 MAC OS:
 
-At set of files and directions to build a claude code container on Mac Silicon MAC OS are in this repository
-They were built by Claude
-Note: The instructors do not have a spare M series mac to test these directions
-If you run into issues, it is suggested that you past the error messages into Claude and ask it for help.
+At set of files and directions to build a claude code container on Mac Silicon MAC OS are in this repository.
+They were built by Claude.
+Note: The instructors do not have a spare M series mac to test these directions.
+If you run into issues, it is suggested that you post the error messages into Claude and ask it for help.
 Also post on https://groups.io/g/cdl/topics to let the instructors know of the issues
 
 
